@@ -1,0 +1,42 @@
+<style>
+.divImpresionFactura {
+  margin-top: 10px;margin-left: 100px;
+  background-image: url('/assets/factura_privamed_B.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size: 870px;
+  width: 850px;
+  height: 1350px;
+}
+.codBarra{
+  font-family:interleave2of5;font-size: 35px;
+}
+
+
+</style>
+
+<div style="text-align: center;">
+  <input type="button" class="btn btn-danger" value="Convert" (click)="convertToPDF()" />
+</div>
+<div style="text-align: center;">
+  <button printSectionId="content" ngxPrint>print</button>
+</div>
+
+
+
+<div id="content"  style="margin-top: 10p;" >
+  <div class ="divImpresionFactura">
+
+<table style="height:350px;margin-left: 50px;">
+  <tr height="15px" >
+    <td style="width: 100%;text-align: left;padding-top: 560px; vertical-align: top;">
+      <span  class="codBarra">
+        123456789123456789
+      </span>
+    </td>
+  </tr>
+</table>
+  </div>
+</div>
+
+
